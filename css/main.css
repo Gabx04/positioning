@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+}
+
+.images {
+  height: 200px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+
+/* Estilos generales para las imágenes */
+img {
+  position: absolute;
+  height: 200px;
+  width: auto;
+}
+
+.img1 {
+  background-color: red;
+}
+
+.img2 {
+  background-color: yellow;
+  left: 100px;
+}
+
+.img3 {
+  background-color: blue;
+  left: 200px;
+}
+
+
+/* Estilos para imágenes en desorden */
+.images--disordered .img1{
+  /* Se aplica la propiedad z-index para modificar el orden en que aparecen los elementos.  */
+  z-index: 2;  
+}
+
+.images--disordered .img2{
+  z-index: 1;  
+}
+
+.images--disordered2 .img1{
+  /* Se aplica la propiedad z-index para modificar el orden en que aparecen los elementos.  */
+  z-index: 1;  
+}
+
+.images--disordered2 .img2{
+  z-index: 2;  
+}
